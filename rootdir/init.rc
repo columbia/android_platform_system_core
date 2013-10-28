@@ -401,7 +401,6 @@ service surfaceflinger /system/bin/surfaceflinger
     group graphics
     onrestart restart zygote
 
-#this place for zygote init.
 service zygote /system/bin/app_process -Xzygote /system/bin --zygote --start-system-server
     class main
     socket zygote stream 660 root system
